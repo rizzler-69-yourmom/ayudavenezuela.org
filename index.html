@@ -116,6 +116,55 @@
                         <h4 class="card-title" data-es="Reportar ayuda" data-en="Report help"></h4>
                         <p class="card-desc" data-es="Comparte recursos en tu área" data-en="Share resources in your area"></p>
                     </a>
+
+                    <!-- NEW: Employment -->
+                    <a href="#empleo" class="dashboard-card card-employment">
+                        <div class="card-icon">💼</div>
+                        <h4 class="card-title" data-es="Empleo y capacitación" data-en="Employment and training"></h4>
+                        <p class="card-desc" data-es="Trabajos y cursos gratuitos" data-en="Jobs and free courses"></p>
+                    </a>
+
+                    <!-- NEW: Education -->
+                    <a href="#educacion" class="dashboard-card card-education">
+                        <div class="card-icon">📚</div>
+                        <h4 class="card-title" data-es="Educación y familia" data-en="Education and family"></h4>
+                        <p class="card-desc" data-es="Recursos escolares y apoyo familiar" data-en="School resources and family support"></p>
+                    </a>
+
+                    <!-- NEW: Entrepreneurship -->
+                    <a href="#emprendimiento" class="dashboard-card card-business">
+                        <div class="card-icon">🚀</div>
+                        <h4 class="card-title" data-es="Emprendimiento" data-en="Entrepreneurship"></h4>
+                        <p class="card-desc" data-es="Inicia tu negocio" data-en="Start your business"></p>
+                    </a>
+
+                    <!-- NEW: Financial -->
+                    <a href="#finanzas" class="dashboard-card card-finance">
+                        <div class="card-icon">💰</div>
+                        <h4 class="card-title" data-es="Finanzas y remesas" data-en="Finance and remittances"></h4>
+                        <p class="card-desc" data-es="Envía y recibe dinero" data-en="Send and receive money"></p>
+                    </a>
+
+                    <!-- NEW: Mental Health -->
+                    <a href="#salud-mental" class="dashboard-card card-mental">
+                        <div class="card-icon">🧠</div>
+                        <h4 class="card-title" data-es="Salud mental" data-en="Mental health"></h4>
+                        <p class="card-desc" data-es="Apoyo emocional y bienestar" data-en="Emotional support and wellbeing"></p>
+                    </a>
+
+                    <!-- NEW: Infrastructure -->
+                    <a href="#servicios" class="dashboard-card card-utilities">
+                        <div class="card-icon">⚡</div>
+                        <h4 class="card-title" data-es="Servicios públicos" data-en="Public services"></h4>
+                        <p class="card-desc" data-es="Luz, agua, transporte" data-en="Power, water, transport"></p>
+                    </a>
+
+                    <!-- NEW: Success Stories -->
+                    <a href="#historias" class="dashboard-card card-hope">
+                        <div class="card-icon">✨</div>
+                        <h4 class="card-title" data-es="Historias de esperanza" data-en="Stories of hope"></h4>
+                        <p class="card-desc" data-es="Inspiración y recuperación" data-en="Inspiration and recovery"></p>
+                    </a>
                 </div>
             </div>
         </section>
@@ -284,6 +333,344 @@
                     <h3 data-es="Ayúdanos a mantener este sitio gratuito" data-en="Help us keep this site free">Ayúdanos a mantener este sitio gratuito</h3>
                     <p data-es="Esta plataforma es mantenida por voluntarios. Tu donación ayuda a pagar el hosting y mantener la información actualizada." data-en="This platform is maintained by volunteers. Your donation helps pay for hosting and keep information updated.">Esta plataforma es mantenida por voluntarios. Tu donación ayuda a pagar el hosting y mantener la información actualizada.</p>
                     <button class="btn-donate" data-es="Donar" data-en="Donate">❤️ Donar</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Employment and Skills Development Section -->
+        <section id="empleo" class="employment-section">
+            <div class="container">
+                <h3 class="section-title" data-es="💼 Empleo y Capacitación" data-en="💼 Employment and Training"></h3>
+                <p class="section-subtitle" data-es="Encuentra trabajo y mejora tus habilidades" data-en="Find work and improve your skills"></p>
+
+                <div class="content-grid">
+                    <!-- Job Board -->
+                    <div class="content-card">
+                        <h4 class="content-card-title" data-es="Ofertas de Trabajo" data-en="Job Listings">📋 Ofertas de Trabajo</h4>
+                        <p data-es="Oportunidades laborales actualizadas semanalmente" data-en="Job opportunities updated weekly">Oportunidades laborales actualizadas semanalmente</p>
+                        <div class="job-list" id="jobList">
+                            <!-- Will be populated by JS -->
+                            <div class="job-item">
+                                <h5 data-es="Vendedor - Caracas" data-en="Salesperson - Caracas">Vendedor - Caracas</h5>
+                                <p data-es="Tienda de abarrotes busca vendedor. Pago semanal." data-en="Grocery store seeks salesperson. Weekly pay.">Tienda de abarrotes busca vendedor. Pago semanal.</p>
+                                <span class="job-meta" data-es="Publicado hace 2 días" data-en="Posted 2 days ago">Publicado hace 2 días</span>
+                            </div>
+                        </div>
+                        <button class="btn-secondary" data-es="Publicar oferta de trabajo" data-en="Post job listing">Publicar oferta de trabajo</button>
+                    </div>
+
+                    <!-- Free Training -->
+                    <div class="content-card">
+                        <h4 class="content-card-title" data-es="Cursos Gratuitos" data-en="Free Courses">🎓 Cursos Gratuitos</h4>
+                        <ul class="resource-links">
+                            <li><a href="https://www.coursera.org/browse" target="_blank">Coursera (español)</a> - Certificados profesionales</li>
+                            <li><a href="https://es.khanacademy.org/" target="_blank">Khan Academy</a> - Matemáticas, ciencias</li>
+                            <li><a href="https://platzi.com/cursos/gratis/" target="_blank">Platzi</a> - Tecnología (algunos gratis)</li>
+                            <li><a href="https://www.edx.org/" target="_blank">edX</a> - Cursos universitarios</li>
+                            <li><a href="https://www.linkedin.com/learning/" target="_blank">LinkedIn Learning</a> - Habilidades profesionales</li>
+                        </ul>
+                    </div>
+
+                    <!-- Resume Tips -->
+                    <div class="content-card">
+                        <h4 class="content-card-title" data-es="Guías de CV y Entrevistas" data-en="Resume and Interview Guides">📝 Guías de CV y Entrevistas</h4>
+                        <ul class="guide-list">
+                            <li><a href="#" download data-es="Cómo hacer un CV efectivo" data-en="How to make an effective resume">📄 Cómo hacer un CV efectivo</a></li>
+                            <li><a href="#" download data-es="Tips para entrevistas en Venezuela" data-en="Interview tips for Venezuela">📄 Tips para entrevistas en Venezuela</a></li>
+                            <li><a href="#" download data-es="Habilidades más demandadas 2026" data-en="Most in-demand skills 2026">📄 Habilidades más demandadas 2026</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education and Family Section -->
+        <section id="educacion" class="education-section">
+            <div class="container">
+                <h3 class="section-title" data-es="📚 Educación y Apoyo Familiar" data-en="📚 Education and Family Support"></h3>
+                <p class="section-subtitle" data-es="Recursos educativos y apoyo para tu familia" data-en="Educational resources and support for your family"></p>
+
+                <div class="content-grid">
+                    <!-- School Info -->
+                    <div class="content-card">
+                        <h4 class="content-card-title" data-es="Información Escolar" data-en="School Information">🏫 Información Escolar</h4>
+                        <ul class="info-list">
+                            <li><strong data-es="Inscripciones:" data-en="Enrollment:">Inscripciones:</strong> <span data-es="Calendario 2026 disponible" data-en="2026 calendar available">Calendario 2026 disponible</span></li>
+                            <li><strong data-es="Útiles escolares:" data-en="School supplies:">Útiles escolares:</strong> <span data-es="Programas de donación activos" data-en="Donation programs active">Programas de donación activos</span></li>
+                            <li><strong data-es="Educación remota:" data-en="Remote education:">Educación remota:</strong> <span data-es="Plataformas y recursos" data-en="Platforms and resources">Plataformas y recursos</span></li>
+                        </ul>
+                        <a href="#" class="link-button" data-es="Ver calendario completo" data-en="View full calendar">Ver calendario completo →</a>
+                    </div>
+
+                    <!-- Free Educational Resources -->
+                    <div class="content-card">
+                        <h4 class="content-card-title" data-es="Recursos Educativos Gratuitos" data-en="Free Educational Resources">📖 Recursos Educativos Gratuitos</h4>
+                        <ul class="resource-links">
+                            <li><a href="https://es.khanacademy.org/" target="_blank">Khan Academy en Español</a> - Todas las materias</li>
+                            <li><a href="https://www.unicef.org/venezuela/educacion" target="_blank">UNICEF Venezuela - Educación</a></li>
+                            <li><a href="https://www.edx.org/es/" target="_blank">edX en Español</a> - Cursos universitarios</li>
+                            <li><a href="https://www.duolingo.com/" target="_blank">Duolingo</a> - Aprende inglés gratis</li>
+                        </ul>
+                    </div>
+
+                    <!-- Child & Family Support -->
+                    <div class="content-card">
+                        <h4 class="content-card-title" data-es="Apoyo para Niños y Familias" data-en="Child and Family Support">👨‍👩‍👧‍👦 Apoyo para Niños y Familias</h4>
+                        <ul class="info-list">
+                            <li><strong data-es="Nutrición infantil:" data-en="Child nutrition:">Nutrición infantil:</strong> <a href="#mapa" data-es="Programas activos" data-en="Active programs">Programas activos</a></li>
+                            <li><strong data-es="Vacunación:" data-en="Vaccination:">Vacunación:</strong> <a href="#salud" data-es="Calendarios y centros" data-en="Schedules and centers">Calendarios y centros</a></li>
+                            <li><a href="#" download data-es="📄 Guía de crianza positiva" data-en="📄 Positive parenting guide">📄 Guía de crianza positiva</a></li>
+                            <li><a href="#" download data-es="📄 Desarrollo infantil saludable" data-en="📄 Healthy child development">📄 Desarrollo infantil saludable</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Entrepreneurship Section -->
+        <section id="emprendimiento" class="business-section">
+            <div class="container">
+                <h3 class="section-title" data-es="🚀 Emprendimiento y Negocios" data-en="🚀 Entrepreneurship and Business"></h3>
+                <p class="section-subtitle" data-es="Inicia o haz crecer tu negocio" data-en="Start or grow your business"></p>
+
+                <div class="content-grid">
+                    <!-- Business Guides -->
+                    <div class="content-card">
+                        <h4 class="content-card-title" data-es="Guías para Emprender" data-en="Startup Guides">📊 Guías para Emprender</h4>
+                        <ul class="guide-list">
+                            <li><a href="#" download data-es="Cómo iniciar un negocio informal" data-en="How to start an informal business">📄 Cómo iniciar un negocio informal</a></li>
+                            <li><a href="#" download data-es="Ventas ambulantes: mejores prácticas" data-en="Street vending: best practices">📄 Ventas ambulantes: mejores prácticas</a></li>
+                            <li><a href="#" download data-es="Pequeña agricultura urbana" data-en="Small urban farming">📄 Pequeña agricultura urbana</a></li>
+                            <li><a href="#" download data-es="Servicios desde casa" data-en="Home-based services">📄 Servicios desde casa</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Microfinance -->
+                    <div class="content-card">
+                        <h4 class="content-card-title" data-es="Microcréditos y Financiamiento" data-en="Microcredit and Financing">💳 Microcréditos y Financiamiento</h4>
+                        <p data-es="Programas disponibles (actualizados regularmente):" data-en="Available programs (regularly updated):">Programas disponibles (actualizados regularmente):</p>
+                        <ul class="info-list">
+                            <li><strong>Banesco:</strong> <span data-es="Microcréditos para emprendedores" data-en="Microcredit for entrepreneurs">Microcréditos para emprendedores</span></li>
+                            <li><strong>Banco del Pueblo:</strong> <span data-es="Créditos sociales" data-en="Social loans">Créditos sociales</span></li>
+                            <li><strong data-es="ONGs:" data-en="NGOs:">ONGs:</strong> <span data-es="Consultar disponibilidad local" data-en="Check local availability">Consultar disponibilidad local</span></li>
+                        </ul>
+                        <p class="note" data-es="Nota: Verifica requisitos actuales antes de aplicar" data-en="Note: Verify current requirements before applying">Nota: Verifica requisitos actuales antes de aplicar</p>
+                    </div>
+
+                    <!-- Market Tips -->
+                    <div class="content-card">
+                        <h4 class="content-card-title" data-es="Consejos de Mercado" data-en="Market Tips">📈 Consejos de Mercado</h4>
+                        <ul class="info-list">
+                            <li><a href="#" data-es="💹 Rastreador de precios locales" data-en="💹 Local price tracker">💹 Rastreador de precios locales</a></li>
+                            <li><a href="#" download data-es="📄 Dónde vender tus productos" data-en="📄 Where to sell your products">📄 Dónde vender tus productos</a></li>
+                            <li><a href="#" download data-es="📄 Negociación y atención al cliente" data-en="📄 Negotiation and customer service">📄 Negociación y atención al cliente</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Financial and Remittances Section -->
+        <section id="finanzas" class="finance-section">
+            <div class="container">
+                <h3 class="section-title" data-es="💰 Finanzas y Remesas" data-en="💰 Finance and Remittances"></h3>
+                <p class="section-subtitle" data-es="Maneja tu dinero y recibe apoyo de afuera" data-en="Manage your money and receive support from abroad"></p>
+
+                <div class="content-grid">
+                    <!-- Remittance Services -->
+                    <div class="content-card">
+                        <h4 class="content-card-title" data-es="Servicios de Remesas" data-en="Remittance Services">💸 Servicios de Remesas</h4>
+                        <div class="comparison-table">
+                            <div class="comparison-row">
+                                <div class="service-name"><strong>Airtm</strong></div>
+                                <div class="service-details" data-es="Digital, rápido, comisión ~5%" data-en="Digital, fast, ~5% fee">Digital, rápido, comisión ~5%</div>
+                            </div>
+                            <div class="comparison-row">
+                                <div class="service-name"><strong>Western Union</strong></div>
+                                <div class="service-details" data-es="Efectivo, confiable, comisión variable" data-en="Cash, reliable, variable fee">Efectivo, confiable, comisión variable</div>
+                            </div>
+                            <div class="comparison-row">
+                                <div class="service-name"><strong>Zelle</strong></div>
+                                <div class="service-details" data-es="USA→VZ, requiere cuenta bancaria" data-en="USA→VZ, requires bank account">USA→VZ, requiere cuenta bancaria</div>
+                            </div>
+                            <div class="comparison-row">
+                                <div class="service-name"><strong>MoneyGram</strong></div>
+                                <div class="service-details" data-es="Internacional, efectivo" data-en="International, cash">Internacional, efectivo</div>
+                            </div>
+                        </div>
+                        <p class="note" data-es="Compara tarifas antes de enviar" data-en="Compare rates before sending">⚠️ Compara tarifas antes de enviar</p>
+                    </div>
+
+                    <!-- Banking Tips -->
+                    <div class="content-card">
+                        <h4 class="content-card-title" data-es="Acceso Bancario" data-en="Banking Access">🏦 Acceso Bancario</h4>
+                        <ul class="info-list">
+                            <li><a href="#" download data-es="Cómo abrir una cuenta bancaria" data-en="How to open a bank account">📄 Cómo abrir una cuenta bancaria</a></li>
+                            <li><a href="#" download data-es="Uso de divisas: tips y restricciones" data-en="Currency use: tips and restrictions">📄 Uso de divisas: tips y restricciones</a></li>
+                            <li><a href="#" data-es="Bancos con mejores servicios 2026" data-en="Banks with best services 2026">📋 Bancos con mejores servicios 2026</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Budgeting Tools -->
+                    <div class="content-card">
+                        <h4 class="content-card-title" data-es="Herramientas de Presupuesto" data-en="Budgeting Tools">📊 Herramientas de Presupuesto</h4>
+                        <ul class="tool-list">
+                            <li><a href="#" data-es="🧮 Calculadora de inflación" data-en="🧮 Inflation calculator">🧮 Calculadora de inflación</a></li>
+                            <li><a href="#" download data-es="📄 Plantilla de presupuesto familiar" data-en="📄 Family budget template">📄 Plantilla de presupuesto familiar</a></li>
+                            <li><a href="#" data-es="💹 Conversor de monedas actualizado" data-en="💹 Updated currency converter">💹 Conversor de monedas actualizado</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mental Health and Wellbeing Section -->
+        <section id="salud-mental" class="mental-health-section">
+            <div class="container">
+                <h3 class="section-title" data-es="🧠 Salud Mental y Bienestar" data-en="🧠 Mental Health and Wellbeing"></h3>
+                <p class="section-subtitle" data-es="Cuida tu mente y emociones" data-en="Take care of your mind and emotions"></p>
+
+                <div class="content-grid">
+                    <!-- Hotlines -->
+                    <div class="content-card highlighted-card">
+                        <h4 class="content-card-title" data-es="Líneas de Apoyo 24/7" data-en="24/7 Support Lines">📞 Líneas de Apoyo 24/7</h4>
+                        <div class="hotline-list">
+                            <div class="hotline-item">
+                                <strong data-es="AVESA - Apoyo emocional" data-en="AVESA - Emotional support">AVESA - Apoyo emocional</strong>
+                                <a href="tel:02129524700" class="hotline-number">0212-952-4700</a>
+                            </div>
+                            <div class="hotline-item">
+                                <strong data-es="Cecodap - Niños y adolescentes" data-en="Cecodap - Children and adolescents">Cecodap - Niños y adolescentes</strong>
+                                <a href="tel:08003252643" class="hotline-number">0800-CALIDAD</a>
+                            </div>
+                            <div class="hotline-item">
+                                <strong data-es="Chat de ayuda WhatsApp" data-en="WhatsApp help chat">Chat de ayuda WhatsApp</strong>
+                                <a href="https://wa.me/1234567890" class="hotline-number whatsapp-btn">Abrir chat</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Self-Help Resources -->
+                    <div class="content-card">
+                        <h4 class="content-card-title" data-es="Recursos de Autoayuda" data-en="Self-Help Resources">🌱 Recursos de Autoayuda</h4>
+                        <ul class="guide-list">
+                            <li><a href="#" download data-es="Manejo del estrés y ansiedad" data-en="Managing stress and anxiety">📄 Manejo del estrés y ansiedad</a></li>
+                            <li><a href="#" download data-es="Técnicas de respiración y relajación" data-en="Breathing and relaxation techniques">📄 Técnicas de respiración y relajación</a></li>
+                            <li><a href="#" download data-es="Cómo hablar con tus hijos sobre la situación" data-en="How to talk to your children about the situation">📄 Cómo hablar con tus hijos sobre la situación</a></li>
+                            <li><a href="#" download data-es="Resiliencia en tiempos difíciles" data-en="Resilience in difficult times">📄 Resiliencia en tiempos difíciles</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Apps & Online Support -->
+                    <div class="content-card">
+                        <h4 class="content-card-title" data-es="Apps y Apoyo Online" data-en="Apps and Online Support">📱 Apps y Apoyo Online</h4>
+                        <ul class="resource-links">
+                            <li><a href="https://www.calm.com/" target="_blank">Calm</a> - Meditación y sueño</li>
+                            <li><a href="https://www.headspace.com/" target="_blank">Headspace</a> - Mindfulness</li>
+                            <li><a href="https://www.7cups.com/" target="_blank">7 Cups</a> - Chat anónimo de apoyo</li>
+                            <li><a href="https://www.who.int/es/campaigns/connecting-the-world-to-combat-coronavirus/healthyathome/healthyathome---mental-health" target="_blank">OMS/WHO</a> - Recursos oficiales</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Infrastructure and Services Section -->
+        <section id="servicios" class="services-section">
+            <div class="container">
+                <h3 class="section-title" data-es="⚡ Servicios e Infraestructura" data-en="⚡ Services and Infrastructure"></h3>
+                <p class="section-subtitle" data-es="Estado actual de servicios públicos" data-en="Current status of public services"></p>
+
+                <div class="content-grid">
+                    <!-- Utilities Tracker -->
+                    <div class="content-card">
+                        <h4 class="content-card-title" data-es="Rastreador de Servicios" data-en="Services Tracker">🔌 Rastreador de Servicios</h4>
+                        <div class="service-status" id="utilityStatus">
+                            <div class="status-item">
+                                <span class="status-icon">💡</span>
+                                <strong data-es="Electricidad" data-en="Electricity">Electricidad</strong>
+                                <span class="status-badge status-warning" data-es="Cortes intermitentes" data-en="Intermittent outages">Cortes intermitentes</span>
+                            </div>
+                            <div class="status-item">
+                                <span class="status-icon">💧</span>
+                                <strong data-es="Agua" data-en="Water">Agua</strong>
+                                <span class="status-badge status-ok" data-es="Servicio normal" data-en="Normal service">Servicio normal</span>
+                            </div>
+                            <div class="status-item">
+                                <span class="status-icon">⛽</span>
+                                <strong data-es="Gasolina" data-en="Gasoline">Gasolina</strong>
+                                <span class="status-badge status-alert" data-es="Disponibilidad limitada" data-en="Limited availability">Disponibilidad limitada</span>
+                            </div>
+                        </div>
+                        <button class="btn-secondary" data-es="Reportar estado en tu zona" data-en="Report status in your area">Reportar estado en tu zona</button>
+                    </div>
+
+                    <!-- Transportation -->
+                    <div class="content-card">
+                        <h4 class="content-card-title" data-es="Transporte" data-en="Transportation">🚌 Transporte</h4>
+                        <ul class="info-list">
+                            <li><a href="#" data-es="Rutas de autobús activas" data-en="Active bus routes">🗺️ Rutas de autobús activas</a></li>
+                            <li><a href="#" data-es="Estaciones de gasolina con combustible" data-en="Gas stations with fuel">⛽ Estaciones de gasolina con combustible</a></li>
+                            <li><a href="#" data-es="Servicios de transporte compartido" data-en="Rideshare services">🚗 Servicios de transporte compartido</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Community Events -->
+                    <div class="content-card">
+                        <h4 class="content-card-title" data-es="Eventos Comunitarios" data-en="Community Events">📅 Eventos Comunitarios</h4>
+                        <div class="event-list" id="eventList">
+                            <div class="event-item">
+                                <strong data-es="Mercado Comunitario" data-en="Community Market">Mercado Comunitario</strong>
+                                <p data-es="Sábado 11 de enero, 8am-2pm - Parque Central" data-en="Saturday January 11, 8am-2pm - Central Park">Sábado 11 de enero, 8am-2pm - Parque Central</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Stories Section -->
+        <section id="historias" class="stories-section">
+            <div class="container">
+                <h3 class="section-title" data-es="✨ Historias de Esperanza" data-en="✨ Stories of Hope"></h3>
+                <p class="section-subtitle" data-es="Venezolanos reconstruyendo sus vidas" data-en="Venezuelans rebuilding their lives"></p>
+
+                <div class="stories-grid">
+                    <!-- Story 1 -->
+                    <div class="story-card">
+                        <div class="story-header">
+                            <span class="story-icon">👨‍🍳</span>
+                            <h4 data-es="De vendedor ambulante a restaurante" data-en="From street vendor to restaurant">De vendedor ambulante a restaurante</h4>
+                        </div>
+                        <p data-es="Juan comenzó vendiendo arepas en la calle hace 6 meses. Hoy tiene un pequeño local en Caracas y emplea a 3 personas." data-en="Juan started selling arepas on the street 6 months ago. Today he has a small restaurant in Caracas and employs 3 people.">Juan comenzó vendiendo arepas en la calle hace 6 meses. Hoy tiene un pequeño local en Caracas y emplea a 3 personas.</p>
+                        <span class="story-location">Caracas, Distrito Capital</span>
+                    </div>
+
+                    <!-- Story 2 -->
+                    <div class="story-card">
+                        <div class="story-header">
+                            <span class="story-icon">👩‍💻</span>
+                            <h4 data-es="Capacitación online, nuevo empleo" data-en="Online training, new job">Capacitación online, nuevo empleo</h4>
+                        </div>
+                        <p data-es="María tomó cursos gratis de diseño gráfico. Ahora trabaja de forma remota para una empresa en Colombia." data-en="María took free graphic design courses. Now she works remotely for a company in Colombia.">María tomó cursos gratis de diseño gráfico. Ahora trabaja de forma remota para una empresa en Colombia.</p>
+                        <span class="story-location">Maracaibo, Zulia</span>
+                    </div>
+
+                    <!-- Story 3 -->
+                    <div class="story-card">
+                        <div class="story-header">
+                            <span class="story-icon">🌱</span>
+                            <h4 data-es="Huerto familiar alimenta a la comunidad" data-en="Family garden feeds the community">Huerto familiar alimenta a la comunidad</h4>
+                        </div>
+                        <p data-es="La familia Rodríguez convirtió su patio en un huerto. Ahora venden vegetales frescos y ayudan a 20 familias vecinas." data-en="The Rodríguez family turned their yard into a garden. Now they sell fresh vegetables and help 20 neighboring families.">La familia Rodríguez convirtió su patio en un huerto. Ahora venden vegetales frescos y ayudan a 20 familias vecinas.</p>
+                        <span class="story-location">Valencia, Carabobo</span>
+                    </div>
+                </div>
+
+                <div class="story-submit">
+                    <h4 data-es="Comparte tu historia" data-en="Share your story">Comparte tu historia</h4>
+                    <p data-es="Tu experiencia puede inspirar a otros venezolanos. Comparte cómo has superado desafíos o ayudado a tu comunidad." data-en="Your experience can inspire other Venezuelans. Share how you've overcome challenges or helped your community.">Tu experiencia puede inspirar a otros venezolanos. Comparte cómo has superado desafíos o ayudado a tu comunidad.</p>
+                    <button class="btn-primary" data-es="Enviar historia" data-en="Submit story">Enviar historia</button>
                 </div>
             </div>
         </section>
