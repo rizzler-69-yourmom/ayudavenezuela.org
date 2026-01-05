@@ -1,0 +1,125 @@
+{
+  "resources": [
+    {
+      "id": 1,
+      "type": "food",
+      "title": "CLAP - Distribución de Alimentos",
+      "state": "Distrito Capital",
+      "location": "Parroquia La Candelaria, Plaza Bolívar",
+      "description": "Distribución de cajas CLAP todos los lunes y jueves de 8am a 12pm. Traer cédula.",
+      "contact": "",
+      "verified": true,
+      "lastUpdated": "2026-01-03",
+      "coordinates": [10.5061, -66.9146]
+    },
+    {
+      "id": 2,
+      "type": "health",
+      "title": "Centro de Salud Santa Rosa",
+      "state": "Miranda",
+      "location": "Los Teques, Av. Bolívar",
+      "description": "Consultas gratuitas de lunes a viernes, 7am-2pm. Disponibilidad limitada de medicamentos.",
+      "contact": "0212-3334455",
+      "verified": true,
+      "lastUpdated": "2026-01-02",
+      "coordinates": [10.3447, -67.0433]
+    },
+    {
+      "id": 3,
+      "type": "water",
+      "title": "Punto de Agua Potable",
+      "state": "Zulia",
+      "location": "Maracaibo, Sector Los Haticos",
+      "description": "Camión cisterna con agua potable todos los días. Traer recipientes.",
+      "contact": "",
+      "verified": false,
+      "lastUpdated": "2026-01-04",
+      "coordinates": [10.6666, -71.6123]
+    },
+    {
+      "id": 4,
+      "type": "health",
+      "title": "Farmacia Comunitaria Cruz Roja",
+      "state": "Carabobo",
+      "location": "Valencia, Av. Bolívar Norte",
+      "description": "Medicamentos a precios solidarios. Atención lunes a sábado 8am-5pm.",
+      "contact": "0241-8887766",
+      "verified": true,
+      "lastUpdated": "2026-01-03",
+      "coordinates": [10.1621, -68.0077]
+    },
+    {
+      "id": 5,
+      "type": "food",
+      "title": "Comedor Comunitario Cáritas",
+      "state": "Lara",
+      "location": "Barquisimeto, Parroquia Concepción",
+      "description": "Almuerzo gratuito para familias de bajos recursos. Lunes a viernes 12pm-2pm.",
+      "contact": "",
+      "verified": true,
+      "lastUpdated": "2026-01-04",
+      "coordinates": [10.0647, -69.3570]
+    },
+    {
+      "id": 6,
+      "type": "food",
+      "title": "Mercal - Punto de Venta",
+      "state": "Aragua",
+      "location": "Maracay, Av. Las Delicias",
+      "description": "Productos subsidiados disponibles. Horario: martes a domingo 8am-3pm.",
+      "contact": "",
+      "verified": true,
+      "lastUpdated": "2026-01-01",
+      "coordinates": [10.2469, -67.5958]
+    },
+    {
+      "id": 7,
+      "type": "health",
+      "title": "Clínica Móvil ONG Salud Para Todos",
+      "state": "Táchira",
+      "location": "San Cristóbal, rotación semanal",
+      "description": "Atención médica gratuita en comunidades. Consultar horarios en redes sociales.",
+      "contact": "WhatsApp: +58 414-1234567",
+      "verified": true,
+      "lastUpdated": "2026-01-04",
+      "coordinates": [7.7669, -72.2250]
+    },
+    {
+      "id": 8,
+      "type": "shelter",
+      "title": "Refugio Temporal Iglesia San Juan",
+      "state": "Bolívar",
+      "location": "Ciudad Bolívar, Centro",
+      "description": "Alojamiento temporal para familias en situación de emergencia. Contactar antes de llegar.",
+      "contact": "0285-6665544",
+      "verified": true,
+      "lastUpdated": "2025-12-30",
+      "coordinates": [8.1292, -63.5497]
+    },
+    {
+      "id": 9,
+      "type": "water",
+      "title": "Pozo Comunitario",
+      "state": "Anzoátegui",
+      "location": "Barcelona, Sector El Carmen",
+      "description": "Agua potable disponible 24/7. Llevar envases propios.",
+      "contact": "",
+      "verified": false,
+      "lastUpdated": "2026-01-03",
+      "coordinates": [10.1333, -64.7000]
+    },
+    {
+      "id": 10,
+      "type": "food",
+      "title": "Distribución de Alimentos ONG Alimenta la Solidaridad",
+      "state": "Mérida",
+      "location": "Mérida, Parque Glorias Patrias",
+      "description": "Distribución semanal todos los sábados 9am-12pm. Registro previo requerido.",
+      "contact": "0274-2223344",
+      "verified": true,
+      "lastUpdated": "2026-01-04",
+      "coordinates": [8.5919, -71.1570]
+    }
+  ],
+  "lastUpdated": "2026-01-04T12:00:00Z"
+}

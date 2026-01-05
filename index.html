@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Información verificada y práctica para ti y tu familia en este nuevo capítulo de Venezuela">
+    <meta name="theme-color" content="#FECB00">
+    <title>AyudaVenezuela.org - Información Verificada</title>
+
+    <!-- PWA Support -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="images/icon-192.png">
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <!-- Header with Language Toggle -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="site-logo">
+                    <span class="flag-icon">🇻🇪</span>
+                    AyudaVenezuela.org
+                </h1>
+                <button class="lang-toggle" id="langToggle" aria-label="Cambiar idioma">
+                    <span class="lang-current">ES</span>
+                    <span class="lang-divider">|</span>
+                    <span class="lang-alt">EN</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Alert Banner (Dynamic) -->
+    <div class="alert-banner" id="alertBanner" style="display: none;">
+        <div class="container">
+            <span class="alert-icon">⚠️</span>
+            <span class="alert-text" data-es="Actualizado: Información importante disponible" data-en="Updated: Important information available"></span>
+            <button class="alert-close" aria-label="Cerrar">&times;</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h2 class="hero-title" data-es="Información verificada y práctica para ti y tu familia en este nuevo capítulo de Venezuela" data-en="Verified and practical information for you and your family in this new chapter of Venezuela"></h2>
+                <p class="hero-subtitle" data-es="Encuentra ayuda cerca de ti" data-en="Find help near you"></p>
+
+                <!-- Quick Search -->
+                <div class="search-box">
+                    <input
+                        type="text"
+                        id="quickSearch"
+                        class="search-input"
+                        placeholder="Buscar ayuda en tu ciudad..."
+                        data-placeholder-es="Buscar ayuda en tu ciudad..."
+                        data-placeholder-en="Search for help in your city..."
+                    >
+                    <button class="search-btn" aria-label="Buscar">🔍</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Access Dashboard -->
+        <section class="dashboard">
+            <div class="container">
+                <h3 class="section-title" data-es="Acceso Rápido" data-en="Quick Access"></h3>
+                <div class="dashboard-grid">
+                    <!-- Card 1: Food & Water -->
+                    <a href="#mapa" class="dashboard-card card-food">
+                        <div class="card-icon">🍽️</div>
+                        <h4 class="card-title" data-es="Encuentra comida y agua cerca" data-en="Find food and water nearby"></h4>
+                        <p class="card-desc" data-es="Puntos de distribución actualizados" data-en="Updated distribution points"></p>
+                    </a>
+
+                    <!-- Card 2: Health & Medicine -->
+                    <a href="#salud" class="dashboard-card card-health">
+                        <div class="card-icon">🏥</div>
+                        <h4 class="card-title" data-es="Salud y medicinas" data-en="Health and medicines"></h4>
+                        <p class="card-desc" data-es="Clínicas y farmacias disponibles" data-en="Available clinics and pharmacies"></p>
+                    </a>
+
+                    <!-- Card 3: News -->
+                    <a href="#noticias" class="dashboard-card card-news">
+                        <div class="card-icon">📰</div>
+                        <h4 class="card-title" data-es="Noticias verificadas del día" data-en="Verified news of the day"></h4>
+                        <p class="card-desc" data-es="Información confiable y neutral" data-en="Reliable and neutral information"></p>
+                    </a>
+
+                    <!-- Card 4: Emergency Lines -->
+                    <a href="#emergencia" class="dashboard-card card-emergency">
+                        <div class="card-icon">📞</div>
+                        <h4 class="card-title" data-es="Líneas de emergencia" data-en="Emergency lines"></h4>
+                        <p class="card-desc" data-es="Contactos importantes" data-en="Important contacts"></p>
+                    </a>
+
+                    <!-- Card 5: Return Guide -->
+                    <a href="#regreso" class="dashboard-card card-return">
+                        <div class="card-icon">🏠</div>
+                        <h4 class="card-title" data-es="Guía de regreso" data-en="Return guide"></h4>
+                        <p class="card-desc" data-es="Para familiares de la diáspora" data-en="For diaspora families"></p>
+                    </a>
+
+                    <!-- Card 6: Report Resource -->
+                    <a href="#reportar" class="dashboard-card card-report">
+                        <div class="card-icon">➕</div>
+                        <h4 class="card-title" data-es="Reportar ayuda" data-en="Report help"></h4>
+                        <p class="card-desc" data-es="Comparte recursos en tu área" data-en="Share resources in your area"></p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Map Section -->
+        <section id="mapa" class="map-section">
+            <div class="container">
+                <h3 class="section-title" data-es="Mapa de Recursos" data-en="Resource Map"></h3>
+                <p class="section-subtitle" data-es="Encuentra ayuda cerca de ti" data-en="Find help near you"></p>
+
+                <!-- Map Filters -->
+                <div class="map-filters">
+                    <button class="filter-btn active" data-filter="all" data-es="Todos" data-en="All">Todos</button>
+                    <button class="filter-btn" data-filter="food" data-es="Comida" data-en="Food">🍽️ Comida</button>
+                    <button class="filter-btn" data-filter="health" data-es="Salud" data-en="Health">🏥 Salud</button>
+                    <button class="filter-btn" data-filter="water" data-es="Agua" data-en="Water">💧 Agua</button>
+                    <button class="filter-btn" data-filter="shelter" data-es="Refugio" data-en="Shelter">🏠 Refugio</button>
+                </div>
+
+                <!-- Map Container -->
+                <div id="mapContainer" class="map-container">
+                    <div class="map-placeholder">
+                        <p data-es="Cargando mapa..." data-en="Loading map...">Cargando mapa...</p>
+                    </div>
+                </div>
+
+                <!-- Resource List (Fallback for offline) -->
+                <div class="resource-list" id="resourceList">
+                    <!-- Will be populated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Daily Updates Section -->
+        <section id="noticias" class="updates-section">
+            <div class="container">
+                <h3 class="section-title" data-es="Actualizaciones Verificadas" data-en="Verified Updates"></h3>
+                <div class="updates-grid" id="updatesGrid">
+                    <!-- Sample Update Card -->
+                    <article class="update-card">
+                        <div class="update-meta">
+                            <span class="update-date">4 de enero, 2026</span>
+                            <span class="update-badge badge-utilities">Servicios</span>
+                        </div>
+                        <h4 class="update-title" data-es="Estado de servicios públicos" data-en="Public services status">Estado de servicios públicos</h4>
+                        <p class="update-excerpt" data-es="Información actualizada sobre electricidad y agua en diferentes estados..." data-en="Updated information on electricity and water in different states...">Información actualizada sobre electricidad y agua en diferentes estados...</p>
+                        <a href="#" class="update-link" data-es="Leer más" data-en="Read more">Leer más →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emergency Contacts -->
+        <section id="emergencia" class="emergency-section">
+            <div class="container">
+                <h3 class="section-title" data-es="Contactos de Emergencia" data-en="Emergency Contacts"></h3>
+                <div class="emergency-grid">
+                    <div class="emergency-card">
+                        <div class="emergency-icon">🚨</div>
+                        <h4 data-es="Emergencias" data-en="Emergencies">Emergencias</h4>
+                        <a href="tel:911" class="emergency-number">911</a>
+                    </div>
+                    <div class="emergency-card">
+                        <div class="emergency-icon">🏥</div>
+                        <h4 data-es="Cruz Roja" data-en="Red Cross">Cruz Roja</h4>
+                        <a href="tel:0212-5768311" class="emergency-number">0212-5768311</a>
+                    </div>
+                    <div class="emergency-card">
+                        <div class="emergency-icon">💬</div>
+                        <h4 data-es="WhatsApp Ayuda" data-en="WhatsApp Help">WhatsApp Ayuda</h4>
+                        <a href="https://wa.me/1234567890" class="emergency-number whatsapp-btn" data-es="Abrir chat" data-en="Open chat">Abrir chat</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practical Guides -->
+        <section class="guides-section">
+            <div class="container">
+                <h3 class="section-title" data-es="Guías Prácticas" data-en="Practical Guides"></h3>
+                <div class="guides-grid">
+                    <a href="guides/ayuda-humanitaria.pdf" class="guide-card" download>
+                        <span class="guide-icon">📄</span>
+                        <span class="guide-title" data-es="Cómo acceder a ayuda humanitaria" data-en="How to access humanitarian aid">Cómo acceder a ayuda humanitaria</span>
+                        <span class="guide-size">PDF - 1.2MB</span>
+                    </a>
+                    <a href="guides/cortes-luz.pdf" class="guide-card" download>
+                        <span class="guide-icon">💡</span>
+                        <span class="guide-title" data-es="Qué hacer en cortes de luz" data-en="What to do during power outages">Qué hacer en cortes de luz</span>
+                        <span class="guide-size">PDF - 800KB</span>
+                    </a>
+                    <a href="guides/derechos.pdf" class="guide-card" download>
+                        <span class="guide-icon">⚖️</span>
+                        <span class="guide-title" data-es="Derechos básicos" data-en="Basic rights">Derechos básicos</span>
+                        <span class="guide-size">PDF - 1.5MB</span>
+                    </a>
+                    <a href="guides/salud-mental.pdf" class="guide-card" download>
+                        <span class="guide-icon">🧠</span>
+                        <span class="guide-title" data-es="Recursos de salud mental" data-en="Mental health resources">Recursos de salud mental</span>
+                        <span class="guide-size">PDF - 900KB</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Report Resource Form -->
+        <section id="reportar" class="report-section">
+            <div class="container">
+                <h3 class="section-title" data-es="Reportar un Punto de Ayuda" data-en="Report a Help Point"></h3>
+                <p class="section-subtitle" data-es="Ayúdanos a mantener la información actualizada" data-en="Help us keep information updated">Ayúdanos a mantener la información actualizada</p>
+
+                <form id="reportForm" class="report-form">
+                    <div class="form-group">
+                        <label for="resourceType" data-es="Tipo de recurso" data-en="Resource type">Tipo de recurso</label>
+                        <select id="resourceType" required>
+                            <option value="">Seleccionar...</option>
+                            <option value="food" data-es="Comida" data-en="Food">🍽️ Comida</option>
+                            <option value="health" data-es="Salud/Medicinas" data-en="Health/Medicine">🏥 Salud/Medicinas</option>
+                            <option value="water" data-es="Agua" data-en="Water">💧 Agua</option>
+                            <option value="shelter" data-es="Refugio" data-en="Shelter">🏠 Refugio</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="state" data-es="Estado" data-en="State">Estado</label>
+                        <select id="state" required>
+                            <option value="">Seleccionar...</option>
+                            <option value="Distrito Capital">Distrito Capital</option>
+                            <option value="Miranda">Miranda</option>
+                            <option value="Zulia">Zulia</option>
+                            <option value="Carabobo">Carabobo</option>
+                            <option value="Lara">Lara</option>
+                            <option value="Aragua">Aragua</option>
+                            <option value="Táchira">Táchira</option>
+                            <option value="Bolívar">Bolívar</option>
+                            <option value="Anzoátegui">Anzoátegui</option>
+                            <option value="Mérida">Mérida</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="location" data-es="Ubicación específica" data-en="Specific location">Ubicación específica</label>
+                        <input type="text" id="location" placeholder="Ej: Parroquia La Candelaria, Av. Urdaneta" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description" data-es="Descripción" data-en="Description">Descripción</label>
+                        <textarea id="description" rows="4" placeholder="¿Qué está disponible? ¿Horarios? ¿Requisitos?" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact" data-es="Contacto (opcional)" data-en="Contact (optional)">Contacto (opcional)</label>
+                        <input type="text" id="contact" placeholder="Teléfono o WhatsApp">
+                    </div>
+
+                    <button type="submit" class="btn-submit" data-es="Enviar Reporte" data-en="Submit Report">Enviar Reporte</button>
+                    <p class="form-note" data-es="Tu reporte será revisado antes de publicarse (dentro de 24 horas)" data-en="Your report will be reviewed before publishing (within 24 hours)">Tu reporte será revisado antes de publicarse (dentro de 24 horas)</p>
+                </form>
+            </div>
+        </section>
+
+        <!-- Support Section -->
+        <section class="support-section">
+            <div class="container">
+                <div class="support-box">
+                    <h3 data-es="Ayúdanos a mantener este sitio gratuito" data-en="Help us keep this site free">Ayúdanos a mantener este sitio gratuito</h3>
+                    <p data-es="Esta plataforma es mantenida por voluntarios. Tu donación ayuda a pagar el hosting y mantener la información actualizada." data-en="This platform is maintained by volunteers. Your donation helps pay for hosting and keep information updated.">Esta plataforma es mantenida por voluntarios. Tu donación ayuda a pagar el hosting y mantener la información actualizada.</p>
+                    <button class="btn-donate" data-es="Donar" data-en="Donate">❤️ Donar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-es="Sobre Nosotros" data-en="About Us">Sobre Nosotros</h4>
+                    <p data-es="Información verificada y neutral para ayudar a familias venezolanas." data-en="Verified and neutral information to help Venezuelan families.">Información verificada y neutral para ayudar a familias venezolanas.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-es="Contacto" data-en="Contact">Contacto</h4>
+                    <p>info@ayudavenezuela.org</p>
+                    <a href="https://wa.me/1234567890" class="whatsapp-link">WhatsApp: +1 234 567 890</a>
+                </div>
+                <div class="footer-section">
+                    <h4 data-es="Última actualización" data-en="Last updated">Última actualización</h4>
+                    <p id="lastUpdated">4 de enero, 2026</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AyudaVenezuela.org | <span data-es="Hecho con" data-en="Made with">Hecho con</span> ❤️ <span data-es="para Venezuela" data-en="for Venezuela">para Venezuela</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/app.js"></script>
+    <script src="js/map.js"></script>
+    <script>
+        // Service Worker Registration
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js')
+                    .then(reg => console.log('SW registered'))
+                    .catch(err => console.log('SW registration failed'));
+            });
+        }
+    </script>
+</body>
+</html>
