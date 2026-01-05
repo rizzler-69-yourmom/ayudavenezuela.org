@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Información verificada y práctica para ti y tu familia en este nuevo capítulo de Venezuela">
+
+    <!-- SEO Meta Tags -->
+    <title>AyudaVenezuela.org - Ayuda Humanitaria, Empleo, Educación y Recursos en Venezuela</title>
+    <meta name="description" content="Encuentra comida, medicina, trabajo, educación y apoyo en Venezuela. Recursos verificados para familias venezolanas: distribución de alimentos, clínicas, empleos, cursos gratis, salud mental y más.">
+    <meta name="keywords" content="ayuda venezuela, comida venezuela, medicina venezuela, empleo venezuela, trabajo venezuela, educación venezuela, recursos humanitarios venezuela, ayuda humanitaria venezuela, clínicas venezuela, farmacias venezuela, cursos gratis venezuela, salud mental venezuela, remesas venezuela">
+    <meta name="author" content="AyudaVenezuela.org">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Spanish, English">
+    <meta name="geo.region" content="VE">
+    <meta name="geo.placename" content="Venezuela">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ayudavenezuela.org/">
+    <meta property="og:title" content="AyudaVenezuela.org - Recursos Verificados para Familias Venezolanas">
+    <meta property="og:description" content="Encuentra comida, medicina, trabajo, educación y apoyo en Venezuela. Plataforma con 13 secciones de ayuda humanitaria y recursos verificados.">
+    <meta property="og:image" content="https://ayudavenezuela.org/images/og-image.jpg">
+    <meta property="og:locale" content="es_VE">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:site_name" content="AyudaVenezuela.org">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ayudavenezuela.org/">
+    <meta property="twitter:title" content="AyudaVenezuela.org - Recursos Verificados para Familias Venezolanas">
+    <meta property="twitter:description" content="Encuentra comida, medicina, trabajo, educación y apoyo en Venezuela. Recursos verificados y actualizados.">
+    <meta property="twitter:image" content="https://ayudavenezuela.org/images/twitter-image.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://ayudavenezuela.org/">
+
+    <!-- Alternate Languages -->
+    <link rel="alternate" hreflang="es" href="https://ayudavenezuela.org/">
+    <link rel="alternate" hreflang="en" href="https://ayudavenezuela.org/">
+    <link rel="alternate" hreflang="x-default" href="https://ayudavenezuela.org/">
+
     <meta name="theme-color" content="#FECB00">
-    <title>AyudaVenezuela.org - Información Verificada</title>
 
     <!-- PWA Support -->
     <link rel="manifest" href="manifest.json">
@@ -699,6 +733,69 @@
             </div>
         </div>
     </footer>
+
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "AyudaVenezuela.org",
+      "alternateName": "Ayuda Venezuela",
+      "url": "https://ayudavenezuela.org",
+      "description": "Plataforma de recursos humanitarios y ayuda para familias venezolanas. Encuentra comida, medicina, empleo, educación y apoyo.",
+      "inLanguage": ["es", "en"],
+      "areaServed": {
+        "@type": "Country",
+        "name": "Venezuela"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://ayudavenezuela.org/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "AyudaVenezuela.org",
+      "url": "https://ayudavenezuela.org",
+      "logo": "https://ayudavenezuela.org/images/icon-512.png",
+      "description": "Organización que provee información verificada y recursos para familias venezolanas",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "VE"
+      },
+      "sameAs": [
+        "https://twitter.com/ayudavenezuela",
+        "https://facebook.com/ayudavenezuela"
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "GovernmentService",
+      "name": "Recursos de Ayuda Humanitaria en Venezuela",
+      "description": "Servicios de ayuda humanitaria, distribución de alimentos, atención médica, empleo y educación",
+      "provider": {
+        "@type": "Organization",
+        "name": "AyudaVenezuela.org"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Venezuela"
+      },
+      "serviceType": "Ayuda Humanitaria",
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceUrl": "https://ayudavenezuela.org"
+      }
+    }
+    </script>
 
     <!-- Scripts -->
     <script src="js/app.js"></script>

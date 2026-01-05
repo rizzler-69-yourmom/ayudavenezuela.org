@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+    <!-- Homepage -->
+    <url>
+        <loc>https://ayudavenezuela.org/</loc>
+        <lastmod>2026-01-05</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="es" href="https://ayudavenezuela.org/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ayudavenezuela.org/"/>
+    </url>
+
+    <!-- Map Section -->
+    <url>
+        <loc>https://ayudavenezuela.org/#mapa</loc>
+        <lastmod>2026-01-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Health Section -->
+    <url>
+        <loc>https://ayudavenezuela.org/#salud</loc>
+        <lastmod>2026-01-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- News Section -->
+    <url>
+        <loc>https://ayudavenezuela.org/#noticias</loc>
+        <lastmod>2026-01-05</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Emergency Section -->
+    <url>
+        <loc>https://ayudavenezuela.org/#emergencia</loc>
+        <lastmod>2026-01-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Return Guide -->
+    <url>
+        <loc>https://ayudavenezuela.org/#regreso</loc>
+        <lastmod>2026-01-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Report Section -->
+    <url>
+        <loc>https://ayudavenezuela.org/#reportar</loc>
+        <lastmod>2026-01-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Employment Section -->
+    <url>
+        <loc>https://ayudavenezuela.org/#empleo</loc>
+        <lastmod>2026-01-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Education Section -->
+    <url>
+        <loc>https://ayudavenezuela.org/#educacion</loc>
+        <lastmod>2026-01-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Entrepreneurship Section -->
+    <url>
+        <loc>https://ayudavenezuela.org/#emprendimiento</loc>
+        <lastmod>2026-01-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Finance Section -->
+    <url>
+        <loc>https://ayudavenezuela.org/#finanzas</loc>
+        <lastmod>2026-01-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Mental Health Section -->
+    <url>
+        <loc>https://ayudavenezuela.org/#salud-mental</loc>
+        <lastmod>2026-01-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Services Section -->
+    <url>
+        <loc>https://ayudavenezuela.org/#servicios</loc>
+        <lastmod>2026-01-05</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Stories Section -->
+    <url>
+        <loc>https://ayudavenezuela.org/#historias</loc>
+        <lastmod>2026-01-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+</urlset>
